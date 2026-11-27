@@ -8,6 +8,12 @@ Desarrollé este proyecto para practicar el consumo de una API REST y el renderi
 
 La aplicación consulta [SWAPI.tech](https://www.swapi.tech/) y muestra un catálogo de naves de Star Wars con datos como su modelo, fabricante, tripulación, pasajeros y otras especificaciones técnicas.
 
+## Vista previa
+
+![Pantalla principal de Naves Estelares, con búsqueda, ordenamiento y tarjetas de naves](capturas/naves-estelares-home.png)
+
+La pantalla principal muestra las naves obtenidas desde SWAPI y permite buscarlas por nombre, ordenarlas y recorrer los resultados por páginas.
+
 ## Funcionalidades
 
 - Consulta de naves mediante la API pública de Star Wars.
