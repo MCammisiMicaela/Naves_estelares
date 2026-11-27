@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorador de naves estelares de Star Wars con JavaScript y la API pública SWAPI.">
+    <title>Naves Estelares | Explorador Star Wars</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header">
+        <p class="eyebrow">Explorador de la galaxia</p>
+        <h1>🚀 Naves Estelares</h1>
+        <p>Conocé las naves de Star Wars y sus especificaciones técnicas.</p>
+    </header>
+
+    <section class="controls" aria-label="Filtros y búsqueda">
+        <div class="control-field">
+            <label for="busqueda">Buscar una nave</label>
+            <input id="busqueda" type="search" placeholder="Ej.: Millennium Falcon" autocomplete="off" disabled>
+        </div>
+        <div class="control-field control-field-select">
+            <label for="orden">Ordenar por</label>
+            <select id="orden" disabled>
+                <option value="nombre">Nombre (A-Z)</option>
+                <option value="id">Identificador</option>
+            </select>
+        </div>
+        <button id="actualizar" type="button">Actualizar datos</button>
+    </section>
+
+    <div class="feedback" role="status" aria-live="polite" aria-atomic="true">
+        <p id="estado">Consultando el catálogo de naves…</p>
+        <p id="contador"></p>
+    </div>
+
+    <main id="main" aria-busy="true">
+        <div class="loading" role="status">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="visually-hidden">Cargando naves</span>
+        </div>
+    </main>
+
+    <nav id="paginacion" class="pagination" aria-label="Páginas de naves" hidden>
+        <button id="anterior" type="button">← Anterior</button>
+        <span id="pagina" aria-live="polite"></span>
+        <button id="siguiente" type="button">Siguiente →</button>
+    </nav>
+
+    <footer class="site-footer">
+        <p>Proyecto desarrollado con HTML, CSS y JavaScript. Datos de <a href="https://www.swapi.tech/" target="_blank" rel="noopener noreferrer">SWAPI.tech</a>.</p>
+    </footer>
+
+    <script type="module" src="./js/app.mjs"></script>
+</body>
+</html>
