@@ -2,7 +2,7 @@ name: Pruebas JavaScript
 
 on:
   push:
-    branches: [main]
+    branches: [main, mejoras/portfolio-naves]
   pull_request:
     branches: [main]
 
