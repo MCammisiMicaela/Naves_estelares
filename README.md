@@ -2,6 +2,8 @@
 
 **Explorador de naves de Star Wars desarrollado con HTML, CSS y JavaScript.**
 
+🌐 **[Ver la página publicada](https://mcammisimicaela.github.io/Naves_estelares/)**
+
 Desarrollé este proyecto para practicar el consumo de una API REST y el renderizado dinámico de información en una página web.
 
 La aplicación consulta [SWAPI.tech](https://www.swapi.tech/) y muestra un catálogo de naves de Star Wars con datos como su modelo, fabricante, tripulación, pasajeros y otras especificaciones técnicas.
