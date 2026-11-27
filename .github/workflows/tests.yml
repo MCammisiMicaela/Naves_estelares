@@ -1,0 +1,22 @@
+name: Pruebas JavaScript
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar proyecto
+        uses: actions/checkout@v4
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verificar sintaxis de JavaScript
+        run: node --check js/app.mjs
+      - name: Ejecutar pruebas
+        run: node --test tests/*.test.mjs
